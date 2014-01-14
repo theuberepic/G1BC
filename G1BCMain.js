@@ -7,7 +7,11 @@
         
 $(document).ready(function() {
   
-// Check if we are running under Node.js
-window.ON_NODEJS = (typeof window === 'undefined') ? true : false;
+  // Check if we are running under Node.js
+  window.ON_NODEJS = (typeof window === 'undefined') ? true : false;
+  
+  // Load G1BC JS files
+  $.getScript('G1BCFiles/js/panelsystem.js');
+  
   
 });
