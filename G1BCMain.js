@@ -7,8 +7,7 @@
         
 $(document).ready(function() {
   
-  
-// Check if we are running under Node.js 
+// Check if we are running under Node.js
 window.ON_NODEJS = (typeof window === 'undefined') ? true : false;
   
 });
