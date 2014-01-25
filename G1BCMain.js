@@ -4,6 +4,13 @@
           //  MAIN JS FILE  //
          // LICENCE: GPL 2 //
         ////////////////////
+		
+function loadScript(src) { // $.getScript doesn't work for me
+	script = document.createElement('script');
+	script.src = src;
+	
+	document.getElementById('body').appendChild(script);
+}
         
 $(document).ready(function() {
   
@@ -11,7 +18,9 @@ $(document).ready(function() {
   window.ON_NODEJS = (typeof window === 'undefined') ? true : false;
   
   // Load G1BC JS files
-  $.getScript('G1BCFiles/js/panelsystem.js');
+  loadScript('G1BCFiles/js/panelsystem.js');
   
-  
+  window.onload = function() {
+	  changePanel();
+  }
 });
