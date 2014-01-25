@@ -1,3 +1,16 @@
-#panel{
-	
+#panel {
+	background-color: #81F781;
+	padding: 14px;
+	height: 60px;
+}
+
+#canvas {
+	margin: 0 auto;
+	height: 100%;
+}
+
+.toplogo {
+	padding-right: 3px;
+	margin-right: 10px;
+	border-right: 1px solid #000;
 }

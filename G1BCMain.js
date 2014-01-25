@@ -19,6 +19,7 @@ $(document).ready(function() {
   
   // Load G1BC JS files
   loadScript('G1BCFiles/js/panelsystem.js');
+  loadScript('G1BCFiles/js/canvaswork.js');
   
   window.onload = function() {
 	  changePanel();
